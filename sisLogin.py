@@ -12,4 +12,11 @@ layout = [
 ]
 
 '''Janela para ser mostrada na Tela'''
-window = sg.Window('Login',layout)
+window = sg.Window('Login',layout=layout)
+
+'''Loop de Eventos'''
+while True:
+    event, values = window.read() #Lê os valores dos eventos que estão na Tela
+    #Quando a tela for fechada pare a execução
+    if event == sg.WIN_CLOSED:
+        break
