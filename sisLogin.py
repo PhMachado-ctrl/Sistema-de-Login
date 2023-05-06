@@ -10,3 +10,6 @@ layout = [
     [sg.Button('Login')],
     [sg.Text('',key='mensagem')],
 ]
+
+'''Janela para ser mostrada na Tela'''
+window = sg.Window('Login',layout)
